@@ -255,7 +255,7 @@ int checkmalloc(char* x)
 {
   if (x == NULL)
   {
-    printf("Memory allocation unsuccessfull for %s!", x);
+    printf("Memory allocation unsuccessfull!");
     free(x);
     return 1;
   }
