@@ -65,6 +65,7 @@ int main()
   if(fileptr == NULL)
   {
     printf("File could not be opened! The program will now exit.");
+    free(api_key);
     return 1;
   }
 
@@ -82,6 +83,7 @@ int main()
 
   // Close the json file after use
   fclose(fileptr);
+  system("rm ./latlong.json");
 
   int i = 0;
   int j = 0;
@@ -181,6 +183,7 @@ int main()
   }
   // Close the json file
   fclose(fileptr);
+  system("rm ./forecast.json");
 
   i = 0;
   j = 0;
